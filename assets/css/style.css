@@ -1,13 +1,14 @@
  *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
  }
  body{
     background-color: rgb(219, 215, 215);
  }
  header{
-    background-color: rgb(174, 227, 174);
+    background-color: #d9eed9;
     height: 80px;
     text-align: center;
     align-items: center;
@@ -26,11 +27,11 @@
     text-decoration: none;
     list-style-type: none;
     padding-right: 20px;
-    color: green;
+    color: #4CAF50;
 
  }
  ul li a:hover{
-    background-color: gray;
+    background-color:gray;
  }
  main{
     width: 1100px;
@@ -67,11 +68,37 @@ p{
 }
 footer{
     text-align: center;
-    background-color: rgb(174, 227, 174);
-    align-items: center;
-    justify-content: center;
+    background-color: #124314;
+    
     height: 60px;
     padding-top: 10px;
 
 
+}
+@media (max-width: 550px){
+   header{
+      width: 100%;
+      height: auto;
+      
+   }
+
+   .product-list{
+      
+      flex-direction: column;
+      transition: all 0.3s ease;
+   }
+   footer{
+      width: 100%;
+      height: auto;
+      
+     
+   }
+   main{
+      width: 100%;
+   }
+   .product{
+      gap: 10px;
+      margin-bottom: 10px;
+        
+   }
 }
